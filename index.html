@@ -300,17 +300,30 @@
                 <div class="modal-body">
                     <p class="lead">Täytä tämä lomake ja olemme sinuun yhteydessä</p>
                     <form action="https://formspree.io/f/xgerrwow" method="POST">
-                        <label>
-                            Your email:
-                            <input type="email" name="_replyto">
-                        </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
-                    </form>
+
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                              Sähköposti:
+                            </label>
+                            <input type="email" class="form-control" id="email" name="Vastaa" required/>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                              Etunimi:
+                            </label>
+                            <input type="text" class="form-control" id="first-name" name="Etunimi" required/>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Sukunimi:</label>
+                            <input type="text" class="form-control" id="last-name" name="Sukunimi" required/>
+                          </div>
+                          <div class="mb-3">
+                            <label for="phone" class="col-form-label">Puhelin:</label>
+                            <input type="tel" class="form-control" id="phone" name="Puhelinnumero" />
+                          </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -318,6 +331,7 @@
                     </button>
                     <button type="submit" class="btn btn-primary">Lähetä</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
