@@ -13,6 +13,8 @@ HTML CSS Support<br/><br/>
 
 Other tools:<br/>
 Git and github<br/>
+Node.js<br/>
+NPM<br/>
 
 Framework: Bootstrap 5.02<br/>
 Map: https://www.embedgooglemap.net/<br/>
